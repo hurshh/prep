@@ -1,10 +1,14 @@
 import java.util.*;
 
+
 public class rough {
     public static int[] dsu;
 
 
     public static void main(String args[]){
+
+        HashSet<Integer> set = new HashSet<>();
+
         int n =10;
         dsu = new int[n+1];
         for(int i=0; i <= n; i++) dsu[i] = i;
@@ -28,6 +32,8 @@ public class rough {
         int fy = find(y);
         dsu[fx] = fy;
     }
+
+
 }
 
 
